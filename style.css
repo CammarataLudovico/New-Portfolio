@@ -84,6 +84,18 @@ section h2::after {
   margin-bottom: 1rem;
 }
 
+.about-card {
+  border: none;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out; /* Effetto di transizione */
+  width: 50%;
+  border-radius: 0.5rem;
+}
+
+.about-card:hover {
+  transform: scale(1.05); /* Effetto zoom quando passi sopra */
+}
+
 /* Portfolio Cards */
 .portfolio-card {
   border: none;
@@ -93,6 +105,11 @@ section h2::after {
 
 .portfolio-card img {
   transition: transform 0.3s ease;
+    width: 100%; /* Occupa tutta la larghezza della card */
+    height: 15rem; /* Imposta un'altezza fissa */
+    object-fit: cover; /* Taglia l'immagine per riempire lo spazio senza deformarla */
+    border-radius: 0.5rem; /* Smussa gli angoli leggermente */
+    border: 5px solid #007bff;
 }
 
 .portfolio-card:hover img {
